@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--[if lt IE 9 ]>
+      <script type="text/javascript" src="/Assets/CBG/js/html5shiv.min.js" ></script>
+      <script type="text/javascript" src="/Assets/CBG/js/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		@media screen and (min-width:1157px){
+							.hid1{display:block;}
+							.hid2{display: none;}
+						}
+		@media screen and (max-width:1156px){
+							.hid1{display:none;}
+							.hid2{display:block;}
+						}
+		@media screen and (min-width:768px){
+							#bc{height:480px;}
+							.span_touch{color: white;font-size:22px;position: absolute;left:8%;width:50%;}
+							.s_t_0{position: absolute;top:90%;}
+							.s_t_1{width:350px;position: absolute;top:60%;}
+							.s_t_2{position: absolute;top:70%;}
+							.s_t_3,.s_t_4{width:340px;position: absolute;top:60%;}
+							.hid{display: none;}
+							.col-sm-12 p{font-size: 50px;}
+							#hw1_hr{display:none;}
+						}
+		@media screen and (max-width:767px){
+						#bc{height:380px;}
+						.row{margin-bottom:0;}
+						.row img{margin-bottom:20px;}
+						.bg-grey .col-sm-8{margin-left:10%;} 
+						.span_touch{font-size:24px;font-weight: bold;}	
+						.hid{display:block;}
+						#bc button{display: none;}
+						.col-sm-12 p{font-size: 30px;}
+						.div_auto{position:relative;left:23%;}
+						#bc .img-responsive{display: none;}
+						#hw1_hr{display:block;width:100%;}
+						}
+		body{margin-top:50px;}
+		.container-fluid a{color:#353333;}
+		ul,li{list-style:none;}
+		.navbar-brand img{position: relative;top:-10px;}
+		#daohang{background: white; border: none;}
+		.navbar-right td{padding:0 10px;}
+		.bg-grey table{margin-left:10%;} 
+		.bg-grey td{line-height:30px;} 
+		#bc{background: url(huawei/homepage_banner_bg_hc2017.jpg);}
+		#bc .img-responsive{position: relative;top:50px; left:10%;}
+		#bc button{ position: absolute;top:80%;left:42%;}
+		.img_hid{position: absolute;top:30%;left:23%;}
+		.div_hid{font-size: 20px;background: #413F3F;color: white;height:100px;}
+		.div_hid span{position:absolute;top:46%;left:10%;}
+		.div_hid a{color: white;text-decoration: none;}
+		.offset_a{position: absolute;top:50%;left:45%;}
+		.col-sm-12 p{position: absolute;top:20%;left:30%;color: white;}
+		#search{border: none;}
+		#footer{background:#373434;}
+		.row_margin{margin-bottom: 20px;}
+		.winwin-footer{color:white;}
+		.winwin-footer a{color:white;}
+		.top .row{margin-top: 30px;}
+		.offset{margin-left:50px;}
+		.winwin-footer td{line-height:30px;}
+		#blank{line-height: 10px;}
+		.div_auto{padding-bottom:10px;}
+		.glyphicon-chevron-down,.glyphicon-chevron-right{float: right;}
+		.hidden-lg div{position: relative;left: 100%;}
+		.img_hover img{opacity: 1;filter(alpha=100)}
+		.img_hover img:hover{opacity:0.8;filter(alpha=80);}
+	</style>
+</head>
+<body>
+	<div class="container-fluid" >
+		<div class="row"><!-- 导航头 -->
+			<div class="navbar navbar-fixed-top navbar-default" id="daohang">
+				<div class="navbar-header">
+					<div class="col">
+						<div class="row">
+							<div class="col-sm-6">
+								<a class="navbar-brand">
+									<img src="huawei/logo.png" width="155px">
+								</a>
+							</div>
+							<div class="col-sm-6">
+								<button class="navbar-toggle collapsed" type="button" data-toggle='collapse' data-target='#box'>
+									<span class='icon-bar'></span>
+									<span class='icon-bar'></span>
+									<span class='icon-bar'></span>
+								</button>
+							</div>
+						</div>
+						<div class="row" >
+							<form class="navbar-form navbar-toggle collapsed">
+								<div class="form-group has-feedback hid2">
+									<!-- <label for="search"></label> -->
+									<input id="search" placeholder='请输入' class="form-control">
+									<span class="glyphicon glyphicon-search form-control-feedback" ></span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			<!-- 1.导航条的菜单折叠部分 -->
+				<div class="collapse navbar-collapse" id="box">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a data-toggle='dropdown'>
+								<span class="glyphicon glyphicon-user"></span>
+								<span>我想...</span>
+							</a>
+						</li>
+						<li>
+							<a data-toggle='dropdown'>个人及家用产品</a>
+						</li>
+						<li>
+							<a data-toggle='dropdown'>商用解决方案</a>
+						</li>
+						<li>
+							<a data-toggle='dropdown'>技术支持</a>
+						</li>
+						<li>
+							<a data-toggle='dropdown'>合作伙伴</a>
+						</li>
+						<li>
+							<a data-toggle='dropdown'>开发者</a>
+						</li>
+						<li>
+							<a data-toggle='dropdown'>华为商城</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav hid2">
+						<li><a>选中区域/语言</a></li>
+						<li><a>登录</a></li>
+						<li><a>注册</a></li>
+						<li><a><span class="glyphicon glyphicon-search"></span></a></li>
+					</ul>
+					<div class="navbar-right hid1">
+						<ul class="nav navbar-nav ">
+							<li><a>选中区域/语言</a></li>
+							<li><a>登录</a></li>
+							<li><a>注册</a></li>
+						</ul>
+						<ul class="nav navbar-nav ">
+							<li><a><span class="glyphicon glyphicon-search"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row row_margin"><!-- 天空背景 -->
+			<div class="col">
+				<div class="row">
+					<div class="col-sm-12" id="bc" >
+						<img src="huawei/homepage_banner_text_hc2017_cn.png" class="img-responsive">
+						<img src="huawei/17-12-26-v1-hcc_banner_text2-cn1.png" class="hid img_hid">
+						<br><br><br><br><br><br><br>
+			 			<button  class="btn btn-danger btn-lg">了解更多</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="hid div_hid">
+		 				<span>
+		 					<p><a href="#">Grow With the Cloud</a></p>
+		 					<p>华为全连接大会2017，9月5-7日，中国 上海</p>
+		 				</span>
+		 			</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row row_margin img_hover"> <!-- 图片区1 -->
+			<div class="col-sm-6" >
+				<img src="huawei/p10-mobilephone_cn2.jpg" width="100%">
+				<!-- <div class="img_hover"></div> -->
+				<span class="span_touch s_t_0">每一拍都是大片</span>
+			</div>
+			<div class="col-sm-6">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="huawei/eric-xu-banner0.jpg" width="100%">
+						<span class="span_touch s_t_1">做多联接、撑大管道、使能行业数字化</span>
+						<span class="hid">华为轮值CEO徐直军谈华为战略：坚持做多联接、撑大管道、使能行业数字化的战略，聚焦ICT基础设施和智能终端，做智能社会的使能者和推动者。</span>
+					</div>
+					<div class="col-sm-12" style="height:15px;"></div>
+					<div class="col-sm-12">
+						<img src="huawei/homerbanner_reshaping_B2B_together.png" width="100%">
+						<span class="span_touch s_t_2">以云服务方式使能垂直行业</span>
+						<span class="hid">运营商可以从行业云、企业联接和通信、IoT等三大领域，拓展B2B新业务。</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row row_margin  img_hover" ><!-- 图片区2 -->
+			<div class="col-sm-6" >
+				<img src="huawei/winwin27-banner.jpg"  width="100%">
+				<span class="span_touch s_t_3">改造、提升、革新,XL Axiata的3R数字化战略</span>
+				<span class="hid">XL Axiata CEO Dian Siswarini指出，数字化转型不仅涉及商业模式和产品的转型，也涉及员工心态的转变，转型要以合适的组织架构，以及政策和战略为支撑。</span>
+			</div>
+			<div class="col-sm-6" >
+				<img src="huawei/mbb2020.jpg" width="100%">
+				<span class="span_touch s_t_4">移动创造未来</span>
+				<span class="hid">通过技术创新，华为与运营商和业界伙伴们齐心协力，构筑以应用为驱动的网络和建立开放、合作、可持续的生态链，共同开启更美好的移动全联接新未来。</span>
+			</div>
+		</div>
+		<div class="row row_margin" ><!-- 视频区 -->
+			<div class="col-sm-12" >
+				<p>共建更美好的全连接世界</p>
+				<a class="offset_a" href="#mybox" data-toggle='modal'><img src="huawei/time.png"></a>
+				<div id="mybox" class="modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<span class='close' data-dismiss='modal'>X</span><br>
+							</div>
+							<div class="modal-body">
+								<video src="huawei/Building_a_Better_Connected_World_201620160905.mp4" controls autoplay></video>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img src="huawei/hw1_index_video2.jpg" width="100%">	
+			</div>
+		</div>
+		<div class="row bg-grey"><!-- 图文区 -->
+			<div class="col-sm-4" >
+				<table>
+					<th><h2><a href="#" >新闻</a></h2></th>
+					<tr>
+						<td>
+							<a href="#">华为OceanStor Dorado V3通过SAP HANA®企业存储解决方案认证</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>2017-05-26</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#">华为与新加坡Keppel Data Centres 达成合作协议，携手打造新一代数据中心</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>2017-05-25</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="#">华为CloudSBC荣获2017 IMS世界论坛“最佳云化解决方案”奖</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>2017-05-23</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-sm-8" >
+				<div class="row">
+					<div class="col-sm-12">
+						<h2><a href="#">展会活动</a></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div>
+							<a href="#"><img class="img-responsive " src="huawei/evnet-interop-tokyo.jpg"></a>
+							<h3><a href="#">Interop Tokyo 2017</a></h3>
+							<p>
+								Leading New ICT <br>
+								The Road To Digital Transformation <br>
+								日本，千叶 6月7日-9日
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div>
+							<a href="#"><img src="huawei/finance_conew.jpg" width="420" class="img-responsive "></a>
+							<h3><a href="#">2017华为全球金融峰会</a></h3>
+							<p>
+								新ICT，加速数字化金融转型 <br>
+								中国，北京 5月23日
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer" class="winwin-footer"><!-- 脚部 -->
+		<div class="container-fluid">
+  			<div class="top">
+       			<div class="row">
+        			<div class="col-md-7 col-sm-12 hidden-xs offset">
+	                    <div class="col-sm-3" >
+                        	<table>
+                        		<tr><td>按访问者</td></tr>
+                        		<tr><td><a href="#"> 个人用户</a></td></tr>
+                        		<tr><td><a href="#"> 企业用户</a></td></tr>
+                        		<tr><td><a href="#">运营商用户</a></td></tr>
+                        		<tr><td><a href="#">合作伙伴</a></td></tr>
+                        		<tr><td><a href="#">新闻媒体</a></td></tr>
+                        		<tr><td><a href="#"> 开发者</a></td></tr>
+                        		<tr><td><a href="#"> 供应商</a></td></tr>
+                        		<tr><td><a href="#">求职者 </a></td></tr>
+                        	</table>                 
+	                    </div>
+	                    <div class="col-sm-3">
+                         	<table>
+                         		<tr><td>关于华为</td></tr>
+                         		<tr><td><a href="#">公司简介</a></td></tr>
+                         		<tr><td><a href="#">公司治理</a></td></tr>
+                         		<tr><td><a href="#">高管信息</a></td></tr>
+                         		<tr><td><a href="#">债券投资者关系</a></td></tr>
+                         		<tr><td><a href="#">可持续发展</a></td></tr>
+                         		<tr><td><a href="#">网络安全</a></td></tr>
+                         		<tr><td><a href="#">出版物</a></td></tr>
+                         		<tr><td><a href="#">公司年报</a></td></tr>
+                         	</table>
+                        </div>            
+                        <div class="col-sm-3">
+                        	<table>
+                        		<tr><td>新闻 &amp; 展会</td></tr>
+                        		<tr><td><a href="#">新闻</a></td></tr>
+                        		<tr><td><a href="#">安全通告</a></td></tr>
+                        		<tr><td>&nbsp;</td></tr>
+                        		<tr><td><a href="#">行业洞察</a></td></tr>
+                        		<tr><td><a href="#">全联接世界</a></td></tr>
+                        		<tr><td><a href="#">全球联接指数</a></td></tr>
+                        	</table>                     
+	                    </div>
+                        <div class="col-sm-3">
+                        	<table>
+                        		<tr><td>快速链接</td></tr>
+                        		<tr><td><a href="#">华为商城</a></td></tr>
+                        		<tr><td><a href="#">荣耀官网</a></td></tr>
+                        		<tr><td><a href="#">产品定义社区</a></td></tr>
+                        		<tr><td><a href="#">心声社区</a></td></tr>
+                        		<tr><td><a href="#">除名查询</a></td></tr>
+                        		<tr><td><a href="#">在线反馈</a></td></tr>
+                        	</table>
+                   		</div>
+					</div>
+					<div  class="col-md-3 col-sm-12 hidden-xs col-md-offset-1"><!-- 二维码 -->
+		                 <table>
+		                 	<th>关注我们</th>
+		                 	<tr><td>
+		                 		<img src="huawei/weibo.png">
+		                 		<img src="huawei/in.png" width="50">
+		                 	</td></tr>
+		                 	<tr><td><img src="huawei/hw_408955.jpg"></td></tr>
+		                 	<tr><td id="blank">&nbsp;</td></tr>
+		                 	<tr><td>官方微信</td></tr>
+		                 </table>    	
+		            </div>
+	            	<div class="dropdown hidden-lg hidden-md hidden-sm col-xs-12 ">
+	            		<p data-toggle='dropdown'>按访问者<span class='glyphicon glyphicon-chevron-down'></span></p>
+						<ul class="dropdown-menu">
+							<li class="dropdown-hearder">个人用户</li>
+							<li><a href="#">企业用户</a></li>
+							<li><a href="#">运营商用户</a></li>
+							<li><a href="#">合作伙伴</a></li>
+							<li><a href="#">新闻媒体</a></li>
+							<li><a href="#">开发者</a></li>
+							<li><a href="#">供应商</a></li>
+							<li><a href="#">求职者</a></li>
+						</ul>
+	            	</div>
+	            	<hr id="hw1_hr">
+	            	<div class="dropdown hidden-lg hidden-md hidden-sm col-xs-12 ">
+	            		<p data-toggle='dropdown'>关于华为<span class='glyphicon glyphicon-chevron-down'></span></p>
+						<ul class="dropdown-menu">
+							<li class="dropdown-hearder">公司简介</li>
+							<li><a href="#">公司治理</a></li>
+							<li><a href="#">高管信息</a></li>
+							<li><a href="#">债券投资者关系</a></li>
+							<li><a href="#">可持续发展</a></li>
+							<li><a href="#">网络安全</a></li>
+							<li><a href="#">出版物</a></li>
+							<li><a href="#">公司年报 </a></li>
+						</ul>
+	            	</div>
+	            	<hr id="hw1_hr">
+	            	<div class="dropdown hidden-lg hidden-md hidden-sm col-xs-12 ">
+	            		<p data-toggle='dropdown'>新闻 &amp; 展会<span class='glyphicon glyphicon-chevron-down'></span></p>
+						<ul class="dropdown-menu">
+							<li class="dropdown-hearder"></li>
+							<li><a href="#">新闻</a></li>
+							<li><a href="#">安全通告</a></li>
+							<li><a href="#">展会活动</a></li>
+						</ul>
+	            	</div>
+	            	<hr id="hw1_hr">
+	            	<div class="hidden-lg hidden-md hidden-sm col-xs-12 ">
+	            		<p><a href="#">行业洞察<span class='glyphicon glyphicon-chevron-right '></span></a></p>
+	            	</div>
+	            	<hr id="hw1_hr">
+	            	<div class="dropdown hidden-lg hidden-md hidden-sm col-xs-12 ">
+	            		<p data-toggle='dropdown'>快速链接<span class='glyphicon glyphicon-chevron-down'></span></p>
+						<ul class="dropdown-menu">
+							<li class="dropdown-hearder">华为商城</li>
+							<li><a href="#">荣耀官网</a></li>
+							<li><a href="#">产品定义社区</a></li>
+							<li><a href="#">心声社区</a></li>
+							<li><a href="#">除名查询</a></li>
+							<li><a href="#">在线反馈</a></li>
+						</ul>
+	            	</div>
+	            	<hr id="hw1_hr">
+		            <div class="hidden-lg hidden-md hidden-sm col-xs-4">
+		            	关注我们
+            			<br>
+            			<div>
+            				<img src="huawei/weibo5.png">
+                 			<img src="huawei/in.png" width="50">
+            			</div>
+		            </div>
+        		</div>
+    		</div>
+		</div>
+		<hr>
+		<div class="container-fluid">
+       		<div class="row">
+       			 <div class="col-md-9 hidden-xs hidden-sm offset">
+             			<div class="bottom_left">
+              			<span id="indexfooter_2_tCopyRight">©2017 华为技术有限公司 &nbsp;&nbsp; <a href="#" target="_blank">粤A2-20044005号</a></span>
+              		</div>  
+        		</div>    
+        		<div class="col-sm-12 col-md-2 div_auto">
+           			<table>
+           				<tr>
+           					<td><a href="#">法律声明&nbsp;&nbsp;|&nbsp;&nbsp;</a></td>
+           					<td><a href="#">隐私保护&nbsp;&nbsp;|&nbsp;&nbsp;</a></td>
+           					<td><a href="#">联系我们</a></td>
+           				</tr>
+           			</table>
+        		</div>    
+      		</div>                                  
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
